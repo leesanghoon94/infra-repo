@@ -476,6 +476,7 @@ status:
     plural: ""
   conditions: []
   storedVersions: []
+
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -719,7 +720,7 @@ spec:
     spec:
       containers:
         - args:
-            - --cluster-name=fast-cluster
+            - --cluster-name=fast-cluster-name
             - --ingress-class=alb
           image: amazon/aws-alb-ingress-controller:v2.4.4
           livenessProbe:
