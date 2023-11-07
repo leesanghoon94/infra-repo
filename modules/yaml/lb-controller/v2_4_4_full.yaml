@@ -720,7 +720,7 @@ spec:
     spec:
       containers:
         - args:
-            - --cluster-name=fast-cluster-name
+            - --cluster-name=fast-cluster
             - --ingress-class=alb
           image: amazon/aws-alb-ingress-controller:v2.4.4
           livenessProbe:
